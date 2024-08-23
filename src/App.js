@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
+import JobInput from './job-input/JobInput';
+import JobIframe from './job-iframe/JobIframe';
+
 import './App.css';
 
 function App() {
+  const [jobUrl, setJobUrl] = useState();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        Job Application Enhancer
+      </h1>
+
+      <JobInput onSubmit={setJobUrl} />
+      <JobIframe url={jobUrl} />
     </div>
   );
 }

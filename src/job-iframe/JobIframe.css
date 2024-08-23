@@ -1,0 +1,9 @@
+.job-iframe {
+  margin-top: 10px;
+
+  border-style: inset;
+  border-color: black;;
+
+  width: 90vw;
+  height: 75vh;
+}
