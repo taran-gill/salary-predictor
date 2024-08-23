@@ -7,6 +7,7 @@ import JobIframe from './JobIframe/JobIframe';
 
 import './App.css';
 import PredictedSalary from './PredictedSalary/PredictedSalary';
+import { Typography } from '@mui/material';
 
 const geminiClient = new GeminiClient(process.env.REACT_APP_GEMINI_KEY);
 
@@ -50,9 +51,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
+      <Typography variant='h1'>
         Salary Predictor
-      </h1>
+      </Typography>
 
       <JobInput onSubmit={setJobUrl} setHasUrlError={setHasUrlError} />
 
