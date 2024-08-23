@@ -1,0 +1,10 @@
+.predicted-salary-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.predicted-salary {
+
+  font-size: medium;
+  text-decoration: underline;
+}
